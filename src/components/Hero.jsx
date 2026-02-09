@@ -11,7 +11,7 @@ export default function Hero() {
                 <img alt="" className="block w-full h-full object-cover opacity-30" src={imgLayer10} />
             </div>
             <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
-                <div className="content-stretch flex gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
+                <div className="content-stretch flex flex-col md:flex-row gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
                     <div className="content-stretch flex gap-[20px] items-center overflow-clip px-[40px] py-[20px] relative shrink-0" data-name="Layer_10" data-node-id="5:9">
                         <div className="h-[199.192px] relative shrink-0 w-[199.186px]" data-name="Group" data-node-id="5:10">
                             <img alt="" className="block max-w-none size-full" src={imgGroup} />
