@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="bg-[#f2e7d1] flex flex-col items-center relative shrink-0 w-full py-24" data-name="2_Section_Intro" data-node-id="16:4">
+        <div id="about" className="bg-[#f2e7d1] flex flex-col items-center relative shrink-0 w-full py-24" data-name="2_Section_Intro" data-node-id="16:4">
             <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row gap-12 items-center justify-center relative shrink-0 w-full mb-16" data-name="AboutSection" data-node-id="4:538">
                 <div className="flex items-center relative shrink-0" data-name="Heading 2" data-node-id="4:539">
                     <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[#1c3d42] text-4xl md:text-5xl max-w-lg whitespace-pre-wrap" data-node-id="4:540">
