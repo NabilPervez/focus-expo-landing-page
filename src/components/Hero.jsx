@@ -10,9 +10,9 @@ export default function Hero() {
             <div className="absolute h-full w-full left-0 top-0 overflow-hidden pointer-events-none fade-in" data-name="Layer_10" data-node-id="5:5">
                 <img alt="" className="block w-full h-full object-cover opacity-30" src={imgLayer10} />
             </div>
-            <div className="content-stretch flex flex-col gap-[64px] items-center justify-center relative shrink-0" data-node-id="16:3">
+            <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
-                    <div className="content-stretch flex gap-[36px] items-center overflow-clip px-[77px] py-[41px] relative shrink-0" data-name="Layer_10" data-node-id="5:9">
+                    <div className="content-stretch flex gap-[20px] items-center overflow-clip px-[40px] py-[20px] relative shrink-0" data-name="Layer_10" data-node-id="5:9">
                         <div className="h-[199.192px] relative shrink-0 w-[199.186px]" data-name="Group" data-node-id="5:10">
                             <img alt="" className="block max-w-none size-full" src={imgGroup} />
                         </div>
@@ -52,8 +52,9 @@ export default function Hero() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[24px] items-center justify-center relative shrink-0 w-full px-4" data-node-id="7:120">
                     <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-full max-w-md" data-node-id="11:604">
-                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-lg md:text-2xl text-center w-full" data-node-id="4:532">
-                            <p className="whitespace-nowrap">April 4, 2026 | Allen, TX</p>
+                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-2xl md:text-5xl text-center w-full" data-node-id="4:532">
+                            <p className="whitespace-nowrap">April 4, 2026</p>
+                            <p className="whitespace-nowrap">Allen, TX</p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">

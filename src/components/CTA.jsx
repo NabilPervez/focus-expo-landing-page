@@ -18,8 +18,8 @@ export default function CTA() {
                     Early Bird tickets are now available. Join the community that is redefining professional success.
                 </p>
             </div>
-            <button className="bg-[#1c3d42] content-stretch flex items-center justify-center px-[39px] py-[15px] relative rounded-[4px] shrink-0 cursor-pointer hover:bg-[#152e32] transition-colors border border-[#1c3d42]" data-name="Button" data-node-id="6:66">
-                <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[16px] text-center text-white tracking-[1px] uppercase" data-node-id="6:67">
+            <button className="bg-white px-[48px] py-[20px] rounded-[4px] shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 group border-2 border-white">
+                <p className="font-['Transducer_Test:Bold',sans-serif] text-[18px] text-center text-[#1c3d42] tracking-[2px] uppercase group-hover:tracking-[3px] transition-all">
                     SIGN UP FOR EARLY BIRD
                 </p>
             </button>

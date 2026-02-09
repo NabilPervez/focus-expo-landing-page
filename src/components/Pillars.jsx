@@ -29,7 +29,7 @@ const pillars = [
     {
         letter: "S",
         title: "Strength",
-        description: "Mental and financial resilience. Strategies to sustain growth without compromising wellbeing.",
+        description: "Mental and financial resilience.",
         color: "#1c3d42"
     }
 ];
@@ -59,17 +59,17 @@ export default function Pillars() {
                     </h2>
                 </div>
 
-                {/* Desktop Grid Layout */}
-                <div className="hidden md:flex flex-wrap justify-center gap-6 w-full max-w-7xl mt-8">
+                {/* Desktop Grid Layout - Forced Row */}
+                <div className="hidden md:flex flex-nowrap justify-center gap-4 w-full max-w-7xl mt-8">
                     {pillars.map((pillar, index) => (
-                        <div key={index} className="flex flex-col items-start p-8 rounded-lg border-2 bg-white w-[300px] min-h-[300px]" style={{ borderColor: pillar.color }}>
+                        <div key={index} className="flex flex-col items-start p-6 rounded-lg border-2 bg-white w-full min-h-[300px]" style={{ borderColor: pillar.color }}>
                             <div
-                                className="font-['Museo_Sans:900',sans-serif] text-6xl leading-none mb-4"
+                                className="font-['Museo_Sans:900',sans-serif] text-5xl leading-none mb-4"
                                 style={{ color: pillar.color }}
                             >
                                 {pillar.letter}
                             </div>
-                            <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-2xl mb-2">
+                            <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-xl mb-2">
                                 {pillar.title}
                             </h3>
                             <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-sm leading-relaxed">
