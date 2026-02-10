@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex flex-col md:flex-row gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
                     <div className="relative shrink-0 max-w-full px-4 py-8 flex justify-center" data-name="Layer_10" data-node-id="5:9">
-                        <img alt="Focus Expo Logo" className="block max-w-[300px] md:max-w-[400px] h-auto w-full object-contain" src="/assets/Focus_Logo_Main_Color.png" />
+                        <img alt="Focus Expo Logo" className="block max-w-[400px] md:max-w-[600px] h-auto w-full object-contain" src="/assets/Focus_Logo_Main_Color.png" />
                     </div>
                     <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4" data-node-id="7:119">
                         <div className="content-stretch flex flex-col gap-[24px] items-center md:items-start relative shrink-0 w-full" data-node-id="7:121">
@@ -31,7 +31,7 @@ export default function Hero() {
                                     <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#3ea0ab]">Islamic values</span>
                                     <span className="leading-[32.5px]">,</span>
                                     <span className="leading-[32.5px] text-[#3ea0ab]">{` `}</span>
-                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#3ea0ab]">mental wellness</span>
+                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#A83F3F]">mental wellness</span>
                                     <span className="leading-[32.5px]">{`, and `}</span>
                                     <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#dd664e]">financial growth.</span>
                                 </p>
