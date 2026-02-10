@@ -1,7 +1,12 @@
+import Lanyard from './Lanyard';
+
 export default function CTA() {
     return (
-        <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center py-[96px] relative shrink-0 w-full" data-name="9_Section_CTA" data-node-id="4:611">
-            <div className="container mx-auto px-4 max-w-7xl flex flex-col gap-[16px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="12:818">
+        <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center py-[96px] relative shrink-0 w-full overflow-hidden" data-name="9_Section_CTA" data-node-id="4:611">
+            <div className="hidden md:block w-full h-[400px] -mb-32 relative z-10 pointer-events-none">
+                <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+            </div>
+            <div className="container mx-auto px-4 max-w-7xl flex flex-col gap-[16px] items-center relative shrink-0 w-full z-20" data-name="Container" data-node-id="12:818">
                 <div className="content-stretch flex flex-col items-center justify-center px-4 relative shrink-0 w-full" data-name="Container" data-node-id="12:819">
                     <p className="font-['Museo_Sans:700',sans-serif] leading-[20px] not-italic relative shrink-0 text-[#e47159] text-[14px] text-center tracking-[3.5px] uppercase" data-node-id="12:820">
                         Limited Availability

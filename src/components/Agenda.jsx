@@ -1,4 +1,4 @@
-import AnimatedList from './AnimatedList';
+
 
 export default function Agenda() {
     const agendaItems = [
