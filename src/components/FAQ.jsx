@@ -59,7 +59,7 @@ export default function FAQ() {
                             </span>
                         </button>
                         <div
-                            className={`w-full overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}
+                            className={`w-full bg-white overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}
                         >
                             <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-[16px] px-6 pb-6 pt-0">
                                 {faq.answer}
