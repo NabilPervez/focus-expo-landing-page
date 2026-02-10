@@ -33,11 +33,11 @@ export default function Footer() {
                         Quick Links
                     </h4>
                     <div className="flex flex-col gap-2">
-                        <a href="#about" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-white text-sm transition-colors">About</a>
-                        <a href="#speakers" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-white text-sm transition-colors">Speakers</a>
-                        <a href="#agenda" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-white text-sm transition-colors">Agenda</a>
-                        <a href="#location" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-white text-sm transition-colors">Location</a>
-                        <a href="#register" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-white text-sm transition-colors">Register</a>
+                        <a href="#about" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-[#dd664e] text-sm transition-colors">About</a>
+                        <a href="#speakers" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-[#dd664e] text-sm transition-colors">Speakers</a>
+                        <a href="#agenda" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-[#dd664e] text-sm transition-colors">Agenda</a>
+                        <a href="#location" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-[#dd664e] text-sm transition-colors">Location</a>
+                        <a href="#register" className="font-['Museo_Sans:500',sans-serif] text-[#f2f2f1]/80 hover:text-[#dd664e] text-sm transition-colors">Register</a>
                     </div>
                 </div>
 

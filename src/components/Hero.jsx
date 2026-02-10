@@ -38,7 +38,7 @@ export default function Hero() {
                             <div className="content-stretch flex flex-col items-start justify-center overflow-clip relative shrink-0" data-name="Paragraph" data-node-id="4:529">
                                 <p className="font-['Museo_Sans:500',sans-serif] leading-[0] not-italic relative shrink-0 text-[#f2e7d1] text-[20px] text-center" data-node-id="4:530">
                                     <span className="leading-[32.5px]">{`A professional intersection of `}</span>
-                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]">Islamic values</span>
+                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#3ea0ab]">Islamic values</span>
                                     <span className="leading-[32.5px]">,</span>
                                     <span className="leading-[32.5px] text-[#3ea0ab]">{` `}</span>
                                     <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#3ea0ab]">mental wellness</span>
@@ -58,8 +58,8 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">
-                        <button className="bg-[#3ea0ab] flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-[#2d7a83] transition-colors border-2 border-[#3ea0ab] flex items-center justify-center" data-name="Button" data-node-id="4:534">
-                            <p className="font-['Transducer_Test:Bold',sans-serif] text-[#1c3d42] text-[14px] text-center tracking-[1px] uppercase">
+                        <button className="bg-white flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg" data-name="Button" data-node-id="4:534">
+                            <p className="font-['Transducer_Test:Bold',sans-serif] text-[#025054] text-[14px] text-center tracking-[1px] uppercase">
                                 Sign Up Now
                             </p>
                         </button>
