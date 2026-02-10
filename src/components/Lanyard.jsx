@@ -7,9 +7,8 @@ import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 import * as THREE from 'three';
 import './Lanyard.css';
 
-// Default assets if not provided
+// Default assets
 const cardGLBDefault = 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5hu54v2PV7CSyCQipUwgCW/74f21fea9527e5f0a8d5e30503e45514/card.glb';
-const lanyardDefault = 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5PWiX401plzY9Yn1r5wQ2e/54a2c6a31630d42e88133575f1416e50/lanyard.png';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -22,7 +21,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    if (isMobile) return null; // Don't render on mobile as requested ("on desktop breakpoints")
+    if (isMobile) return null;
 
     return (
         <div className="lanyard-wrapper">
@@ -34,7 +33,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
             >
                 <ambientLight intensity={Math.PI} />
                 <Physics gravity={gravity} timeStep={1 / 60}>
-                    <Band isMobile={isMobile} />
+                    <Band />
                 </Physics>
                 <Environment blur={0.75}>
                     <Lightformer
@@ -71,7 +70,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
     );
 }
 
-function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
+function Band({ maxSpeed = 50, minSpeed = 0 }) {
     const band = useRef(),
         fixed = useRef(),
         j1 = useRef(),
@@ -84,18 +83,19 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
         dir = new THREE.Vector3();
     const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 };
 
-    // Use online assets for demo or local if available. 
-    // For now using the defaults provided in the example and texture override logic.
     const { nodes, materials } = useGLTF(cardGLBDefault);
-    const texture = useTexture(lanyardDefault);
 
     // Load custom textures
-    const frontTexture = useTexture('/assets/Focus_Logo_Vert_Color.png');
-    const backTexture = useTexture('/assets/Focus_Logo_Wmark_Color.png');
+    // Strap texture (Watermark)
+    const strapTexture = useTexture('/assets/Focus_Logo_Wmark_Color.png');
+    // Card texture (Vertical Logo)
+    const cardTexture = useTexture('/assets/Focus_Logo_Vert_Color.png');
 
-    // Adjust textures
-    frontTexture.flipY = false;
-    backTexture.flipY = false;
+    // Configure textures
+    strapTexture.wrapS = strapTexture.wrapT = THREE.RepeatWrapping;
+    strapTexture.repeat.set(-4, 1);
+
+    cardTexture.flipY = false;
 
     const [curve] = useState(
         () =>
@@ -148,7 +148,6 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
     });
 
     curve.curveType = 'chordal';
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 
     return (
         <>
@@ -178,7 +177,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
                     >
                         <mesh geometry={nodes.card.geometry}>
                             <meshPhysicalMaterial
-                                map={materials.base.map}
+                                map={cardTexture}
                                 map-anisotropy={16}
                                 clearcoat={1}
                                 clearcoatRoughness={0.15}
@@ -198,7 +197,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
                     depthTest={false}
                     resolution={[1000, 1000]}
                     useMap
-                    map={texture}
+                    map={strapTexture}
                     repeat={[-4, 1]}
                     lineWidth={1}
                 />
