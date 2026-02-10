@@ -38,14 +38,14 @@ export default function Navbar() {
             </div>
 
             {isOpen && (
-                <div className="md:hidden fixed inset-0 top-20 bg-[#1c3d42] border-b border-[#3ea0ab]/20 z-40 overflow-y-auto">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="#about" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-[#3ea0ab] block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide">About</a>
-                        <a href="#speakers" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-[#3ea0ab] block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide">Speakers</a>
-                        <a href="#agenda" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-[#3ea0ab] block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide">Agenda</a>
-                        <a href="#location" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-[#3ea0ab] block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide">Location</a>
-                        <a href="#faq" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-[#3ea0ab] block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide">FAQ</a>
-                        <button className="w-full mt-4 bg-[#3ea0ab] text-[#1c3d42] px-4 py-3 rounded-[4px] font-bold text-sm hover:bg-[#2d7a83] transition-colors uppercase tracking-wide">
+                <div className="md:hidden fixed left-0 right-0 top-[80px] bottom-0 bg-[#1c3d42] border-b border-[#3ea0ab]/20 z-40 overflow-y-auto">
+                    <div className="px-4 py-6 space-y-4">
+                        <a href="#about" onClick={() => setIsOpen(false)} className="text-white hover:text-[#3ea0ab] block text-lg font-medium uppercase tracking-wide">About</a>
+                        <a href="#speakers" onClick={() => setIsOpen(false)} className="text-white hover:text-[#3ea0ab] block text-lg font-medium uppercase tracking-wide">Speakers</a>
+                        <a href="#agenda" onClick={() => setIsOpen(false)} className="text-white hover:text-[#3ea0ab] block text-lg font-medium uppercase tracking-wide">Agenda</a>
+                        <a href="#location" onClick={() => setIsOpen(false)} className="text-white hover:text-[#3ea0ab] block text-lg font-medium uppercase tracking-wide">Location</a>
+                        <a href="#faq" onClick={() => setIsOpen(false)} className="text-white hover:text-[#3ea0ab] block text-lg font-medium uppercase tracking-wide">FAQ</a>
+                        <button className="w-full mt-6 bg-[#3ea0ab] text-[#1c3d42] px-6 py-4 rounded-[4px] font-bold text-base hover:bg-[#2d7a83] transition-colors uppercase tracking-wide">
                             Sign Up Now
                         </button>
                     </div>

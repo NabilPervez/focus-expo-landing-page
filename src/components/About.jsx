@@ -66,15 +66,15 @@ export default function About() {
                 ))}
             </div>
 
-            {/* Mobile Carousel */}
-            <div className="md:hidden w-full relative">
-                <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-8 scrollbar-hide" style={{ scrollBehavior: 'smooth' }}>
+            {/* Mobile 2x2 Grid */}
+            <div className="md:hidden w-full px-4">
+                <div className="grid grid-cols-2 gap-4">
                     {stats.map((stat, index) => (
-                        <div key={index} className={`snap-center shrink-0 w-[240px] ${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl flex flex-col gap-2 items-center justify-center p-8 relative`}>
-                            <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-4xl text-center">
+                        <div key={index} className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl flex flex-col gap-2 items-center justify-center p-6 text-center h-full`}>
+                            <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-3xl">
                                 {stat.value}
                             </h3>
-                            <p className="font-['Inter:Regular',sans-serif] font-normal text-[#f2e7d1] text-xs text-center tracking-wider uppercase opacity-90">
+                            <p className="font-['Inter:Regular',sans-serif] font-normal text-[#f2e7d1] text-xs tracking-wider uppercase opacity-90 leading-tight">
                                 {stat.label}
                             </p>
                         </div>
