@@ -1,26 +1,33 @@
+import { motion } from 'framer-motion';
+import CountUp from './CountUp';
+
 export default function About() {
 
     const stats = [
         {
-            value: "500+",
+            number: 500,
+            suffix: "+",
             label: "Expected Attendees",
             bgColor: "bg-[#025054]",
             borderColor: "border-[#52a0ad]"
         },
         {
-            value: "25+",
+            number: 25,
+            suffix: "+",
             label: "Industry Speakers",
             bgColor: "bg-[#025054]",
             borderColor: "border-[#f68d6f]"
         },
         {
-            value: "12",
+            number: 12,
+            suffix: "",
             label: "Expert-Led Workshops",
             bgColor: "bg-[#025054]",
             borderColor: "border-[#52a0ad]"
         },
         {
-            value: "1",
+            number: 1,
+            suffix: "",
             label: "Transformative Day",
             bgColor: "bg-[#025054]",
             borderColor: "border-[#f68d6f]"
@@ -29,7 +36,15 @@ export default function About() {
 
     return (
         <div id="about" className="bg-[#f2e7d1] flex flex-col items-center relative shrink-0 w-full py-24" data-name="2_Section_Intro" data-node-id="16:4">
-            <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row gap-12 items-center justify-center relative shrink-0 w-full mb-16" data-name="AboutSection" data-node-id="4:538">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row gap-12 items-center justify-center relative shrink-0 w-full mb-16"
+                data-name="AboutSection"
+                data-node-id="4:538"
+            >
                 <div className="flex items-center relative shrink-0" data-name="Heading 2" data-node-id="4:539">
                     <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[#1c3d42] text-4xl md:text-5xl max-w-lg whitespace-pre-wrap" data-node-id="4:540">
                         <span className="text-[#013030]">The Answers You Have Been</span>
@@ -50,19 +65,34 @@ export default function About() {
                         We are creating a sophisticated space where career ambition meets spiritual grounding, and where mental wellness is recognized as the foundation of functioning at our best.
                     </p>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Desktop Grid */}
             <div className="hidden md:grid container mx-auto px-4 max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative shrink-0 w-full" data-name="StatsSection" data-node-id="11:605">
                 {stats.map((stat, index) => (
-                    <div key={index} className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col gap-2 items-center justify-center p-8 relative shrink-0 transform hover:-translate-y-1 duration-300`}>
-                        <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-5xl text-center">
-                            {stat.value}
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col gap-2 items-center justify-center p-8 relative shrink-0 transform hover:-translate-y-1 duration-300`}
+                    >
+                        <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-5xl text-center flex items-center gap-1">
+                            <CountUp
+                                from={0}
+                                to={stat.number}
+                                separator=","
+                                direction="up"
+                                duration={1.5}
+                                className="count-up-text"
+                            />
+                            <span>{stat.suffix}</span>
                         </h3>
                         <p className="font-['Inter:Regular',sans-serif] font-normal text-[#f2e7d1] text-sm text-center tracking-wider uppercase opacity-90">
                             {stat.label}
                         </p>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
@@ -70,14 +100,29 @@ export default function About() {
             <div className="md:hidden w-full px-4">
                 <div className="grid grid-cols-2 gap-4">
                     {stats.map((stat, index) => (
-                        <div key={index} className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl flex flex-col gap-2 items-center justify-center p-6 text-center h-full`}>
-                            <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-3xl">
-                                {stat.value}
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl flex flex-col gap-2 items-center justify-center p-6 text-center h-full`}
+                        >
+                            <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-3xl flex items-center justify-center gap-1">
+                                <CountUp
+                                    from={0}
+                                    to={stat.number}
+                                    separator=","
+                                    direction="up"
+                                    duration={1.5}
+                                    className="count-up-text"
+                                />
+                                <span>{stat.suffix}</span>
                             </h3>
                             <p className="font-['Inter:Regular',sans-serif] font-normal text-[#f2e7d1] text-xs tracking-wider uppercase opacity-90 leading-tight">
                                 {stat.label}
                             </p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
