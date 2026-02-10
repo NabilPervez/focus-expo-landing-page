@@ -76,13 +76,8 @@ export default function Agenda() {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto px-4 max-w-4xl relative shrink-0 w-full h-[600px]" data-name="Container" data-node-id="11:707">
-                <AnimatedList
-                    items={agendaItemComponents}
-                    showGradients={true}
-                    displayScrollbar={true}
-                    enableArrowNavigation={false}
-                />
+            <div className="container mx-auto px-4 max-w-4xl relative shrink-0 w-full flex flex-col gap-6" data-name="Container" data-node-id="11:707">
+                {agendaItemComponents}
             </div>
             <button className="bg-white border-2 border-white content-stretch flex h-[54px] items-center justify-center px-[43px] py-[17px] relative rounded-[4px] shrink-0 w-full max-w-xs cursor-pointer hover:bg-gray-100 transition-colors shadow-md" data-name="Button" data-node-id="16:5">
                 <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#025054] text-[14px] text-center tracking-[1px] uppercase" data-node-id="16:6">
