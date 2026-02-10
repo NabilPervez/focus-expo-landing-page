@@ -12,18 +12,8 @@ export default function Hero() {
             </div>
             <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex flex-col md:flex-row gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
-                    <div className="content-stretch flex gap-[20px] items-center overflow-clip px-[40px] py-[20px] relative shrink-0 max-w-full" data-name="Layer_10" data-node-id="5:9">
-                        <div className="h-[199.192px] relative shrink-0 w-[199.186px]" data-name="Group" data-node-id="5:10">
-                            <img alt="" className="block max-w-none size-full" src={imgGroup} />
-                        </div>
-                        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0" data-name="Group" data-node-id="5:36">
-                            <div className="col-1 h-[16.257px] ml-0 mt-[65.8%] relative row-1 w-[141.286px]" data-name="Group" data-node-id="5:37">
-                                <img alt="" className="block max-w-none size-full" src={imgGroup1} />
-                            </div>
-                            <div className="col-1 h-[16.662px] ml-0 mt-0 relative row-1 w-[141.286px]" data-name="Group" data-node-id="5:44">
-                                <img alt="" className="block max-w-none size-full" src={imgGroup2} />
-                            </div>
-                        </div>
+                    <div className="relative shrink-0 max-w-full px-4 py-8 flex justify-center" data-name="Layer_10" data-node-id="5:9">
+                        <img alt="Focus Expo Logo" className="block max-w-[300px] md:max-w-[400px] h-auto w-full object-contain" src="/assets/Focus_Logo_Main_Color.png" />
                     </div>
                     <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4" data-node-id="7:119">
                         <div className="content-stretch flex flex-col gap-[24px] items-center md:items-start relative shrink-0 w-full" data-node-id="7:121">
