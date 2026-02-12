@@ -91,7 +91,7 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
     strapTexture.wrapS = strapTexture.wrapT = THREE.RepeatWrapping;
     strapTexture.repeat.set(-4, 1);
 
-    cardTexture.flipY = false;
+    cardTexture.flipY = true;
 
     const [curve] = useState(
         () =>
@@ -197,9 +197,6 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
                     color="white"
                     depthTest={false}
                     resolution={[1000, 1000]}
-                    useMap
-                    map={strapTexture}
-                    repeat={[-4, 1]}
                     lineWidth={1}
                 />
             </mesh>
