@@ -45,28 +45,32 @@ export default function FAQ() {
                 </div>
             </div>
             <div className="container mx-auto px-4 max-w-4xl flex flex-col gap-4 relative shrink-0 w-full" data-name="Container" data-node-id="11:769">
-                {faqs.map((faq, index) => (
-                    <div key={index} className="bg-white border-2 border-[#e8e8e8] border-solid flex flex-col items-start overflow-hidden rounded-[6px] shrink-0 w-full transition-all duration-300" data-name="Container">
-                        <button
-                            onClick={() => toggleFAQ(index)}
-                            className="flex items-center justify-between w-full h-[80px] px-6 text-left focus:outline-none hover:bg-black/5 transition-colors"
-                        >
-                            <span className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-[18px] pr-4">
-                                {faq.question}
-                            </span>
-                            <span className={`font-['Inter:Medium',sans-serif] font-medium text-[#52a0ad] text-[24px] transform transition-transform duration-300 ${openIndex === index ? 'rotate-45 text-[#e47159]' : ''}`}>
-                                +
-                            </span>
-                        </button>
-                        <div
-                            className={`w-full bg-white overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}
-                        >
-                            <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-[16px] px-6 pb-6 pt-0">
-                                {faq.answer}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+                <div className="space-y-1 w-full">
+                    {faqs.map((faq, index) => (
+                        <details key={index} className="group [&_summary::-webkit-details-marker]:hidden bg-white border border-gray-200 rounded-lg overflow-hidden">
+                            <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-4 text-[#1c3d42] hover:bg-gray-50 transition-colors">
+                                <span className="font-['Museo_Sans:900',sans-serif] text-lg font-medium">
+                                    {faq.question}
+                                </span>
+                                <svg
+                                    className="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-[#52a0ad]"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </summary>
+
+                            <div className="px-6 pb-6 pt-2">
+                                <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42]/80 leading-relaxed text-[16px]">
+                                    {faq.answer}
+                                </p>
+                            </div>
+                        </details>
+                    ))}
+                </div>
             </div>
         </div>
     );

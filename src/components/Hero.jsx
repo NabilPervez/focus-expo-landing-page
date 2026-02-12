@@ -24,16 +24,9 @@ export default function Hero() {
                                 <p className="relative shrink-0 text-[#f2e7d1] max-w-full" data-node-id="4:526">
                                     Aligning Direction.
                                 </p>
-                                <div className="relative shrink-0 max-w-full w-full flex justify-center md:justify-start" data-node-id="4:527">
-                                    <GradientText
-                                        colors={["#3ea0ab", "#52a0ad", "#3ea0ab"]}
-                                        animationSpeed={6}
-                                        showBorder={false}
-                                        className="text-4xl md:text-[72px] font-['Transducer_Test:Regular',sans-serif]"
-                                    >
-                                        Through The Lens of Faith
-                                    </GradientText>
-                                </div>
+                                <p className="text-4xl md:text-[72px] font-['Transducer_Test:Regular',sans-serif] text-[#3ea0ab]">
+                                    Through The Lens of Faith
+                                </p>
                             </div>
                             <div className="content-stretch flex flex-col items-start justify-center overflow-clip relative shrink-0" data-name="Paragraph" data-node-id="4:529">
                                 <p className="font-['Museo_Sans:500',sans-serif] leading-[0] not-italic relative shrink-0 text-[#f2e7d1] text-[20px] text-center" data-node-id="4:530">

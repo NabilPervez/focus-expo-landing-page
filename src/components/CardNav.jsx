@@ -159,7 +159,7 @@ const CardNav = ({
                         className="card-nav-cta-button flex items-center justify-center no-underline"
                         style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
                     >
-                        Get Started
+                        Sign Up
                     </a>
                 </div>
 
