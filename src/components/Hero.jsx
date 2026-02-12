@@ -16,7 +16,7 @@ export default function Hero() {
             <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex flex-col md:flex-row gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
                     <div className="relative shrink-0 max-w-full px-4 py-8 flex justify-center" data-name="Layer_10" data-node-id="5:9">
-                        <img alt="Focus Expo Logo" className="block max-w-[200px] md:max-w-[400px] h-auto w-full object-contain" src="/assets/Focus_Logo_Main_White4k.png" />
+                        <img alt="Focus Expo Logo" className="block max-w-[300px] md:max-w-[600px] h-auto w-full object-contain" src="/assets/Focus_Logo_Main_White4k.png" />
                     </div>
                     <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4" data-node-id="7:119">
                         <div className="content-stretch flex flex-col gap-[24px] items-center md:items-start relative shrink-0 w-full" data-node-id="7:121">
@@ -26,7 +26,7 @@ export default function Hero() {
                                 </p>
                                 <div className="relative shrink-0 max-w-full w-full flex justify-center md:justify-start" data-node-id="4:527">
                                     <GradientText
-                                        colors={["#3ea0ab", "#ffffff", "#3ea0ab"]}
+                                        colors={["#3ea0ab", "#52a0ad", "#3ea0ab"]}
                                         animationSpeed={6}
                                         showBorder={false}
                                         className="text-4xl md:text-[72px] font-['Transducer_Test:Regular',sans-serif]"
@@ -51,9 +51,9 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="content-stretch flex flex-col gap-[24px] items-center justify-center relative shrink-0 w-full px-4" data-node-id="7:120">
-                    <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-full max-w-md" data-node-id="11:604">
-                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-xl md:text-5xl text-center w-full break-normal" data-node-id="4:532">
-                            <p className="">April 4, 2026 | Plano, TX</p>
+                    <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-full" data-node-id="11:604">
+                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-xl md:text-5xl text-center w-full" data-node-id="4:532">
+                            <p className="whitespace-nowrap">April 4, 2026 | Plano, TX</p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">

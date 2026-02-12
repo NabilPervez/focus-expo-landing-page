@@ -23,9 +23,9 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div className="hidden md:block">
-                            <button className="bg-white text-[#025054] px-6 py-2.5 rounded-[4px] font-bold text-sm hover:bg-gray-100 transition-colors uppercase tracking-wide shadow-md">
+                            <a href="https://luma.com/64o45o5x" className="bg-white text-[#025054] px-6 py-2.5 rounded-[4px] font-bold text-sm hover:bg-gray-100 transition-colors uppercase tracking-wide shadow-md">
                                 Sign Up Now
-                            </button>
+                            </a>
                         </div>
                         <div className="-mr-2 flex md:hidden">
                             <button
@@ -63,9 +63,9 @@ export default function Navbar() {
                         <a href="#location" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">Location</a>
                         <a href="#faq" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">FAQ</a>
 
-                        <button className="w-full mt-4 bg-white text-[#025054] px-6 py-4 rounded-[4px] font-bold text-lg hover:bg-gray-100 transition-colors uppercase tracking-wide shadow-lg">
+                        <a href="https://luma.com/64o45o5x" className="w-full mt-4 bg-white text-[#025054] px-6 py-4 rounded-[4px] font-bold text-lg hover:bg-gray-100 transition-colors uppercase tracking-wide shadow-lg text-center block" onClick={() => setIsOpen(false)}>
                             Sign Up Now
-                        </button>
+                        </a>
                     </div>
                 </div>
             )}

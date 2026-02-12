@@ -10,21 +10,22 @@ import Location from './components/Location';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import FadeInWhenVisible from './components/FadeInWhenVisible';
 
 function App() {
   return (
     <div className="bg-[#f2f2f1] min-h-screen">
       <Navbar />
-      <Hero />
-      <About />
-      <Pillars />
-      <WhyAttend />
-      <Speakers />
-      <Agenda />
-      <Location />
-      <FAQ />
-      <CTA />
-      <Footer />
+      <FadeInWhenVisible><Hero /></FadeInWhenVisible>
+      <FadeInWhenVisible><About /></FadeInWhenVisible>
+      <FadeInWhenVisible><Pillars /></FadeInWhenVisible>
+      <FadeInWhenVisible><WhyAttend /></FadeInWhenVisible>
+      <FadeInWhenVisible><Speakers /></FadeInWhenVisible>
+      <FadeInWhenVisible><Agenda /></FadeInWhenVisible>
+      <FadeInWhenVisible><Location /></FadeInWhenVisible>
+      <FadeInWhenVisible><FAQ /></FadeInWhenVisible>
+      <FadeInWhenVisible><CTA /></FadeInWhenVisible>
+      <FadeInWhenVisible><Footer /></FadeInWhenVisible>
     </div>
   );
 }
