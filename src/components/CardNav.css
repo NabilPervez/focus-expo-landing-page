@@ -106,14 +106,14 @@
     /* bottom: 0;          <-- Removed */
     width: 100%;
     padding: 0.5rem;
+    padding-top: 65px;
+    /* Push content down below the absolute header */
     display: flex;
-    align-items: flex-end;
+    align-items: stretch;
+    /* Make all cards same height */
     gap: 12px;
-    /* visibility: hidden; <-- Managed by React/Framer now */
-    /* pointer-events: none; <-- Managed by React/Framer now */
     z-index: 1;
     min-height: 200px;
-    /* Ensure some height for desktop cards */
 }
 
 .card-nav.open .card-nav-content {
