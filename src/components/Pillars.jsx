@@ -60,7 +60,7 @@ export default function Pillars() {
                 </div>
 
                 {/* Desktop Grid Layout - Forced Row */}
-                <div className="hidden md:flex flex-nowrap justify-center gap-4 w-full max-w-7xl mt-8">
+                <div className="hidden md:flex flex-nowrap justify-center gap-4 w-full max-w-7xl mt-8 px-4 sm:px-6 md:px-12 lg:px-24">
                     {pillars.map((pillar, index) => (
                         <div key={index} className="flex flex-col items-start p-6 rounded-lg border-2 bg-white w-full min-h-[300px] hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-default" style={{ borderColor: pillar.color }}>
                             <div

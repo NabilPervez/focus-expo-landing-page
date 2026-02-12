@@ -76,7 +76,7 @@ export default function Agenda() {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto px-4 max-w-4xl relative shrink-0 w-full flex flex-col gap-6" data-name="Container" data-node-id="11:707">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-4xl relative shrink-0 w-full flex flex-col gap-6" data-name="Container" data-node-id="11:707">
                 {agendaItemComponents}
             </div>
 

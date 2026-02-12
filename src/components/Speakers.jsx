@@ -55,7 +55,7 @@ export default function Speakers() {
             </div>
 
             {/* Desktop Grid */}
-            <div className="hidden md:grid container mx-auto px-4 grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl">
+            <div className="hidden md:grid container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl">
                 {speakers.map((speaker, index) => (
                     <div key={index} className="flex flex-col group">
                         <div className="relative overflow-hidden rounded-lg border-2 border-[#3ea0ab] aspect-[3/4] mb-4 bg-[#1c3d42]/5">

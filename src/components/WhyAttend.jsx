@@ -55,7 +55,7 @@ export default function WhyAttend() {
             </div>
 
             {/* Desktop Grid */}
-            <div className="hidden md:grid container mx-auto px-4 max-w-7xl grid-cols-1 md:grid-cols-3 gap-8 relative shrink-0 w-full" data-name="Container" data-node-id="11:671">
+            <div className="hidden md:grid container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl grid-cols-1 md:grid-cols-3 gap-8 relative shrink-0 w-full" data-name="Container" data-node-id="11:671">
                 {reasons.map((reason, index) => (
                     <div key={index} className={`bg-[#faf7f2] border-2 border-[${reason.borderColor}] border-solid flex flex-col gap-[24px] min-h-[335px] h-auto items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px] hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-default`} style={{ borderColor: reason.borderColor }}>
                         <div className="content-stretch flex items-start p-[10px] relative shrink-0 w-full">

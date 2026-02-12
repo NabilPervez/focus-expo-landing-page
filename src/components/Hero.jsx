@@ -15,10 +15,10 @@ export default function Hero() {
             </div>
             <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex flex-col md:flex-row gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
-                    <div className="relative shrink-0 max-w-full px-4 sm:px-6 md:px-0 py-8 flex justify-center" data-name="Layer_10" data-node-id="5:9">
+                    <div className="relative shrink-0 max-w-full px-4 sm:px-6 md:px-12 lg:px-24 py-8 flex justify-center" data-name="Layer_10" data-node-id="5:9">
                         <img alt="Focus Expo Logo" className="block max-w-[300px] md:max-w-[600px] h-auto w-full object-contain" src="/assets/Focus_Logo_Main_White4k.png" />
                     </div>
-                    <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4 sm:px-6 md:px-0" data-node-id="7:119">
+                    <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4 sm:px-6 md:px-12 lg:px-24" data-node-id="7:119">
                         <div className="content-stretch flex flex-col gap-[24px] items-center md:items-start relative shrink-0 w-full" data-node-id="7:121">
                             <div className="content-stretch flex flex-col font-['Transducer_Test:Regular',sans-serif] items-center md:items-start leading-tight not-italic relative shrink-0 text-4xl md:text-[72px] tracking-[-1px] md:tracking-[-1.8px] w-full max-w-full md:max-w-4xl text-center md:text-left break-words" data-name="Heading 1" data-node-id="4:525">
                                 <p className="relative shrink-0 text-[#f2e7d1] max-w-full" data-node-id="4:526">
