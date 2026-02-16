@@ -56,7 +56,11 @@ const CardNav = ({
                     </div>
 
                     <div className="logo-container">
-                        <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
+                        {logo ? (
+                            <img src={logo} alt={logoAlt} className="nav-logo" />
+                        ) : (
+                            <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
+                        )}
                     </div>
 
                     <a
