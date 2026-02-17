@@ -11,6 +11,7 @@ import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import FadeInWhenVisible from './components/FadeInWhenVisible';
+import SmoothScroll from './components/SmoothScroll';
 
 const imgVector = "/assets/Focus_Logo_Wmark_Black.png";
 
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <div className="bg-[#f2f2f1] min-h-screen">
+      <SmoothScroll />
       <CardNav
         logo={imgVector}
         items={navItems}
