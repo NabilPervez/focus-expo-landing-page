@@ -101,9 +101,6 @@
 
 .card-nav-content {
     /* Position relative to flow naturally in the auto-height container */
-    /* position: absolute;  <-- Removed */
-    /* top: 60px;          <-- Removed */
-    /* bottom: 0;          <-- Removed */
     width: 100%;
     padding: 0.5rem;
     padding-top: 65px;
@@ -122,7 +119,6 @@
 }
 
 .nav-card {
-    height: 100%;
     flex: 1 1 0;
     min-width: 0;
     border-radius: calc(0.75rem - 0.2rem);
@@ -185,11 +181,6 @@
 
     /* Don't hide CTA on mobile per user requirements usually, but adhering to provided CSS for now */
     .card-nav-cta-button {
-        /* display: none; */
-        /* The user provided CSS hides it, but often users want it visible. 
-       I will comment out display:none for now to check, or just respect provided css.
-       Actually, standard is to hide or move it. 
-       Let's stick to the provided CSS exactly first. */
         display: none;
     }
 
@@ -198,7 +189,7 @@
         align-items: stretch;
         gap: 8px;
         padding: 0.5rem;
-        /* bottom: 0; <-- Removed */
+        padding-top: 80px;
         justify-content: flex-start;
         min-height: auto;
         /* Allow auto height on mobile */

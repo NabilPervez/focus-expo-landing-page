@@ -99,6 +99,7 @@ const CardNav = ({
                                                 target={lnk.href.startsWith('#') ? undefined : "_blank"}
                                                 rel={lnk.href.startsWith('#') ? undefined : "noopener noreferrer"}
                                                 aria-label={lnk.ariaLabel || lnk.label}
+                                                onClick={() => setIsExpanded(false)}
                                             >
                                                 <GoArrowUpRight className="nav-card-link-icon" aria-hidden="true" />
                                                 {lnk.label}
