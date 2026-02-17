@@ -45,8 +45,8 @@ export default function About() {
                 data-name="AboutSection"
                 data-node-id="4:538"
             >
-                <div className="flex items-center relative shrink-0" data-name="Heading 2" data-node-id="4:539">
-                    <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[#1c3d42] text-4xl md:text-5xl max-w-lg whitespace-pre-wrap" data-node-id="4:540">
+                <div className="flex items-center relative max-w-full" data-name="Heading 2" data-node-id="4:539">
+                    <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative text-[#1c3d42] text-3xl md:text-5xl" data-node-id="4:540">
                         <span className="text-[#013030]">The Answers You Have Been</span>
                         <span>{` `}</span>
                         <span className="font-['Transducer_Test:Bold',sans-serif] text-[#025054]">Seeking.</span>

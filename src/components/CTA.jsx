@@ -8,7 +8,7 @@ export default function CTA() {
     const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '200px' });
 
     return (
-        <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center pb-[96px] relative shrink-0 w-full overflow-hidden" data-name="9_Section_CTA" data-node-id="4:611">
+        <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center pt-48 pb-[96px] relative shrink-0 w-full overflow-hidden" data-name="9_Section_CTA" data-node-id="4:611">
             <div ref={ref} className="hidden md:block w-full h-[400px] -mb-32 relative z-10 pointer-events-none">
                 {inView && (
                     <Suspense fallback={<div className="w-full h-full" />}>
