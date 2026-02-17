@@ -1,6 +1,6 @@
 
 import { useInView, useMotionValue, useSpring } from 'motion/react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 
 export default function CountUp({
     to,
@@ -55,14 +55,17 @@ export default function CountUp({
         }
     }, [isInView, startWhen, motionValue, direction, from, to, delay, onStart, onEnd, duration]);
 
+    const formatter = useMemo(() => {
+        return new Intl.NumberFormat('en-US', {
+            useGrouping: !!separator,
+            maximumFractionDigits: 0,
+        });
+    }, [separator]);
+
     useEffect(() => {
         const unsubscribe = springValue.on('change', latest => {
             if (ref.current) {
-                const options = {
-                    useGrouping: !!separator,
-                    maximumFractionDigits: 0,
-                };
-                const formattedNumber = Intl.NumberFormat('en-US', options).format(latest.toFixed(0));
+                const formattedNumber = formatter.format(latest.toFixed(0));
                 ref.current.textContent = separator
                     ? formattedNumber.replace(/,/g, separator)
                     : formattedNumber;
@@ -70,7 +73,7 @@ export default function CountUp({
         });
 
         return () => unsubscribe();
-    }, [springValue, separator]);
+    }, [springValue, separator, formatter]);
 
     return <span className={className} ref={ref} />;
 }
